@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/number_background"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".CalculatorFragment">
@@ -13,12 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:background="@color/background"
+        android:background="@color/pressed_color"
         android:ems="10"
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:textSize="32sp" />
+
     <Spinner
         android:id="@+id/fromSpinner"
         android:layout_width="match_parent"
@@ -30,18 +31,20 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:background="@color/background"
+        android:background="@color/pressed_color"
         android:ems="10"
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold" />
+
     <Spinner
         android:id="@+id/toSpinner"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -55,18 +58,19 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:weightSum="5">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
+
             <Button
                 android:id="@+id/_7Button"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="7"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -77,8 +81,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="4"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -89,8 +92,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="1"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -102,14 +104,14 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:weightSum="5">
+
             <Button
                 android:id="@+id/ceButton"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/operator_button_background"
+                android:backgroundTint="@color/calc_background"
                 android:padding="0dp"
                 android:text="CE"
                 android:textColor="@color/black"
@@ -121,8 +123,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="8"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -133,8 +134,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="5"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -145,8 +145,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="2"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -157,8 +156,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="0"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -178,8 +176,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/operator_button_background"
+                android:backgroundTint="@color/calc_background"
                 android:foregroundTint="@color/black"
                 android:src="@drawable/backspace_icon" />
 
@@ -189,8 +186,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="9"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -201,8 +197,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="6"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -213,8 +208,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/number_button_background"
+                android:backgroundTint="@color/pressed_color"
                 android:text="3"
                 android:textColor="@color/black"
                 android:textSize="34sp" />
@@ -225,8 +219,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_layout"
-                android:backgroundTint="@color/operator_button_background"
+                android:backgroundTint="@color/calc_background"
                 android:text="."
                 android:textColor="@color/black"
                 android:textSize="34sp" />
